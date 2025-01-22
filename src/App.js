@@ -1,7 +1,15 @@
 import AppRouter from "./Routes/AppRouter";
+import RevealEffect from "./components/RevealEffect";
 
 const App = () => {
-  return <AppRouter />;
+
+ 
+  return (
+    <>
+      <RevealEffect />
+      <AppRouter />
+    </>
+  );
 };
 
 export default App;

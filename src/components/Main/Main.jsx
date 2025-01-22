@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import { BrowserSvg, CallSvg, EmailSvg, SmsSvg } from "./MainSvg";
 import { vCardData } from "./VdCardData.js";
+import translations from "../../language.json";
+import {  useSelector } from "react-redux";
+import {sselectedLanguage } from "../../store/slices/selectedLanguageSlice";
+
 import "./main.scss";
 
 const Main = () => {
+  const sselectedLanguages = useSelector(sselectedLanguage);
+
   const saveContact = () => {
     const vCardBlob = new Blob([vCardData], { type: "text/vcard" });
     const vCardUrl = URL.createObjectURL(vCardBlob);
@@ -14,12 +20,14 @@ const Main = () => {
     a.click();
   };
 
+  
+
 
 
   return (
     <main className="main">
-      <h1>Narek Meliksetyan</h1>
-      <h2>Front-End Developer</h2>
+      <h1>{translations[sselectedLanguages].name}</h1>
+      <h2>{translations[sselectedLanguages].frontEndDeveloper}</h2>
       <div className="main__contact">
         <div className="main__contact-top">
           <Link to="tel:+37477873707">
@@ -35,7 +43,7 @@ const Main = () => {
             <BrowserSvg />
           </Link>
         </div>
-        <button onClick={saveContact}>Save Contact</button>
+        <button onClick={saveContact}>{translations[sselectedLanguages].saveContact}</button>
       </div>
     </main>
   );

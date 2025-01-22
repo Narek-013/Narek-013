@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { Imgs } from "../../Images/Imgs";
+import translations from "../../language.json";
+import { useSelector } from "react-redux";
+import { sselectedLanguage } from "../../store/slices/selectedLanguageSlice";
 import "./social.scss";
 
 const Social = () => {
+  const sselectedLanguages = useSelector(sselectedLanguage);
+
   return (
     <div className="social">
       <Link to="https://narek-013.github.io/portfolio/#main" target="_blank" className="portfolio">
@@ -11,7 +16,7 @@ const Social = () => {
       </Link>
       <div className="social__content">
         <h2>
-          <img src={Imgs.social} alt="social" /> Socials
+          <img src={Imgs.social} alt="social" /> {translations[sselectedLanguages].links}
         </h2>
         <div className="social__content-links">
           <Link to="https://www.instagram.com/narek____13/" target="_blank">

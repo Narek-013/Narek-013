@@ -1,0 +1,25 @@
+.lang-option {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  display: flex;
+  align-items: center;
+  z-index: 150;
+  background: #2e2e2e;
+  color: white;
+  border-radius: 8px;
+  width: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 35px;
+  animation: shadow 1s forwards infinite alternate;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0px 0px 6px whitesmoke;
+  }
+  to {
+    box-shadow: 0px 0px 14px whitesmoke;
+  }
+}

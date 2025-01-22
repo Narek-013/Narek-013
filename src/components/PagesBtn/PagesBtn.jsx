@@ -1,25 +1,30 @@
 import { NavLink } from "react-router-dom";
 import { AddressSvg, GallerySvg, LinkSvg, WorksSvg } from "./SvgCode";
+import translations from "../../language.json";
+import { useSelector } from "react-redux";
+import { sselectedLanguage } from "../../store/slices/selectedLanguageSlice";
 import "./pagesBtn.scss";
 
 const PagesBtn = () => {
+  const sselectedLanguages = useSelector(sselectedLanguage);
+
   return (
     <div className="pages-btn">
       <NavLink to="/">
         <LinkSvg />
-        Links
+        {translations[sselectedLanguages].links}
       </NavLink>
       <NavLink to="/gallery">
         <GallerySvg />
-        Gallery
+        {translations[sselectedLanguages].gallery}
       </NavLink>
       <NavLink to="/works">
         <WorksSvg />
-        Works
+        {translations[sselectedLanguages].works}
       </NavLink>
       <NavLink to="/address">
         <AddressSvg />
-        Address
+        {translations[sselectedLanguages].address}
       </NavLink>
     </div>
   );

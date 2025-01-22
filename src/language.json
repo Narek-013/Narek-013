@@ -1,0 +1,38 @@
+{
+  "en": {
+    "name":"Narek Meliksetyan",
+    "frontEndDeveloper": "Front-End Developer",
+    "saveContact": "Save Contact",
+    "links": "Links",
+    "gallery": "Gallery",
+    "works": "Works",
+    "address": "Address",
+    "socials": "Socials",
+    "homeLocation": "Home Location",
+    "workLocation": "Work Location"
+  },
+  "ru": {
+    "name": "Нарек Меликсетян",
+    "frontEndDeveloper": "Фронтенд разработчик",
+    "saveContact": "Сохранить контакт",
+    "links": "Ссылки",
+    "gallery": "Галерея",
+    "works": "Работы",
+    "address": "Адрес",
+    "socials": "Социальные сети",
+    "homeLocation": "Местоположение дома",
+    "workLocation": "Местоположение работы"
+  },
+  "hy": {
+    "name": "Նարեկ Մելիքսեթյան",
+    "frontEndDeveloper": "Դիմային մշակող",
+    "saveContact": "Պահպանել կոնտակտը",
+    "links": "Հղումներ",
+    "gallery": "Նկարներ",
+    "works": "Աշխատանքներ",
+    "address": "Հասցե",
+    "socials": "Սոցիալական ցանցեր",
+    "homeLocation": "Տան գտնվելու վայրը",
+    "workLocation": "Աշխատանքի գտնվելու վայրը"
+  }
+}

@@ -57,7 +57,7 @@ export const Imgs = {
     flow,
   ],
 
-  works: [phenix, toptal, upworkwork, smartCode],
+  works: [smartCode, upworkwork, toptal, phenix],
 
   links,
   whatsapp,

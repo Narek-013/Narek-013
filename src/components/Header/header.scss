@@ -13,7 +13,7 @@
   .header__container {
     width: 100%;
     position: absolute;
-    background-color: rgba(17, 17, 17,.4);
+    background-color: rgba(17, 17, 17, 0.4);
     top: 0;
     left: 0;
     height: 210px;
@@ -27,6 +27,16 @@
       width: 144px;
       height: 144px;
       border-radius: 100%;
+      animation: shadow 1s forwards infinite alternate;
     }
+  }
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0px 0px 6px whitesmoke;
+  }
+  to {
+    box-shadow: 0px 0px 14px whitesmoke;
   }
 }
