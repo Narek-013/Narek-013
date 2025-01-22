@@ -1,0 +1,86 @@
+$primary-color: #ff6f61;
+$secondary-color: #d32f2f;
+$button-color: #ff5722;
+$button-hover-color: #e64a19;
+$text-color: #fff;
+$background-overlay: rgba(0, 0, 0, 0.2);
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.not-found-container {
+  background: url("../../Images/png/mainImg.png");
+  background-size: cover;
+
+  .not-found__back {
+    color: $text-color;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    .not-found-content {
+      max-width: 500px;
+      padding: 20px;
+      background: $background-overlay;
+      border-radius: 10px;
+      box-shadow: 0.5px 0.5px 6px $secondary-color;
+      animation: shadowAnimation 1.5s ease-in-out infinite;
+      @media (max-width: 475px) {
+        width: 310px;
+      }
+      @media (max-width: 375px) {
+        width: 280px;
+      }
+      h1 {
+        font-size: 120px;
+        margin: 0;
+        font-weight: bold;
+        @media (max-width: 475px) {
+          font-size: 80px;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: $secondary-color;
+        color: $text-color;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $button-hover-color;
+        }
+      }
+    }
+  }
+}
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0.5px 0.5px 6px $secondary-color;
+  }
+  25% {
+    box-shadow: 2px 2px 12px $secondary-color; // Մեծանում է
+  }
+  50% {
+    box-shadow: 3px 3px 18px $secondary-color; // Ավելի մեծանում է
+  }
+  75% {
+    box-shadow: 2px 2px 12px $secondary-color; // Հիմնական չափի մոտ
+  }
+  100% {
+    box-shadow: 0.5px 0.5px 6px $secondary-color; // Վերադառնում է սկզբնական չափին
+  }
+}

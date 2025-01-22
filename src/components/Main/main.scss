@@ -1,0 +1,64 @@
+.main {
+  width: 100%;
+  margin-top: 78px;
+  text-align: center;
+  h1 {
+    margin-bottom: 4px;
+    color: #191919;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+  }
+  h2 {
+    color: #707070;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .main__contact {
+    margin-top: 22px;
+    display: flex;
+    row-gap: 13px;
+    flex-direction: column;
+    padding: 10px 3px;
+    border-radius: 12px;
+    .main__contact-top {
+      display: flex;
+      justify-content: space-between;
+      a {
+        background-color:#191919;
+        display: flex;
+        padding: 12px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 85px;
+        border-radius: 22px;
+        color: #707070;
+        @media (max-width:366px) {
+            max-width: 70px;
+        }
+      }
+    }
+    button {
+      width: 100%;
+      padding: 11px 24px;
+      border-radius: 22px;
+      outline: none;
+      border: none;
+      background-color: black;
+      color: white;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; 
+    }
+  }
+}

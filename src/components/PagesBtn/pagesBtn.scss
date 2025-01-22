@@ -1,0 +1,27 @@
+.pages-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    color: #707070;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    flex-direction: column;
+    row-gap: 6px;
+    @media (max-width:370px) {
+        padding: 12px 21px;
+    }
+  }
+  .active {
+    border-bottom: 1.8px solid black;
+    color: #191919;
+  }
+}
