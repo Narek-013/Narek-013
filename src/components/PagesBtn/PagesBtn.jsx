@@ -18,7 +18,7 @@ const PagesBtn = () => {
         <GallerySvg />
         {translations[sselectedLanguages].gallery}
       </NavLink>
-      <NavLink to="/works">
+      <NavLink to="/works" className="works">
         <WorksSvg />
         {translations[sselectedLanguages].works}
       </NavLink>
