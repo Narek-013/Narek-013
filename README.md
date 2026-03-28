@@ -1,5 +1,13 @@
 # Hi, I'm Narek Meliksetyan
 
+<a href="https://www.buymeacoffee.com/narek013" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40" />
+</a>
+&nbsp;
+<a href="https://ko-fi.com/narek013" target="_blank">
+  <img src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" alt="Ko-fi" height="40" />
+</a>
+
 Backend-focused developer building modern web systems with clean architecture and practical tooling.
 
 ## About Me
