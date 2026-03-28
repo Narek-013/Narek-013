@@ -37,7 +37,8 @@ import phenix from "./worksImg/phenix.jpg";
 import smartCode from "./worksImg/smartCode.jpg";
 import toptal from "./worksImg/toptal.jpg";
 import upworkwork from "./worksImg/upworkwork.png";
-
+import armed from "./worksImg/armed.jpg";
+import isaaImg from "./worksImg/isaa.webp";
 
 export const Imgs = {
   gallerys: [
@@ -57,7 +58,7 @@ export const Imgs = {
     flow,
   ],
 
-  works: [smartCode, upworkwork, toptal, phenix],
+  works: [isaaImg,armed, phenix, toptal, upworkwork, smartCode, ],
 
   links,
   whatsapp,
